@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 require('dotenv').config();
 
+
 // Add database package and connection string (can remove ssl)
 const { Pool } = require('pg');
 const pool = new Pool({
@@ -11,6 +12,7 @@ const pool = new Pool({
     rejectUnauthorized: false
   }
 });
+
 
 // Set up EJS
 app.set("view engine", "ejs");
