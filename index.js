@@ -26,12 +26,7 @@ app.listen(process.env.PORT || 3000, () => {
 // Setup routes
 app.get("/", (req, res) => {
     //res.send ("Hello world...");
-    res.render("index");
-});
-
-app.get("/", (req, res) => {
-    //res.send ("Hello world...");
-    const sql = "SELECT * FROM PRODUCT ORDER BY PROD_ID";
+    const sql = "SELECT * FROM NOPRODUCT ORDER BY PROD_ID";
     pool.query(sql, [], (err, result) => {
         var message = "";
         var model = {};
