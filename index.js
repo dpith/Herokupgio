@@ -1,7 +1,6 @@
 // Add required packages
 const express = require("express");
 const app = express();
-
 require('dotenv').config();
 
 // Add database package and connection string (can remove ssl)
